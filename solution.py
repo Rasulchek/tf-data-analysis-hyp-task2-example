@@ -17,5 +17,14 @@ def solution(x: np.array, y: np.array) -> bool:
     # Измените код этой функции
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
-    sta, p = ks_2samp(*x, *y)
+    sta, p = kruskal(x, y)
     return p < 0.09  # Ваш ответ, True или False
+
+# t = 0
+# f = 0
+# for i in range(0, 100):
+#     if(solution(d1[0], d1[i])):
+#         t = t + 1
+#     else:
+#         f = f + 1
+# print(t, f)
